@@ -1,0 +1,98 @@
+.main {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(56, 56, 63);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.main img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.logoAndSearch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logoAndSearch input {
+  all: unset;
+  height: 40px;
+  min-width: calc(100% - 10px);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.logoAndSearch input::placeholder {
+  color: rgb(182, 181, 181);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  background-color: rgb(98, 98, 101);
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  width: 250px;
+  overflow: hidden;
+}
+.searchBox .searchImage {
+  width: 20px;
+  height: 20px;
+  left: 15px;
+  opacity: 0.4;
+  transition: opacity 0.4s ease;
+}
+.searchBox .searchImageFaded {
+  opacity: 0;
+}
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transform: translateX(0px);
+  transition: 500ms;
+}
+.searchBoxShifted {
+  transform: translateX(-20px);
+}
+.locationList {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.locationList button {
+  all: unset;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.locationList button:hover {
+  background-color: rgb(123, 122, 122);
+}
+.locationList img {
+  width: 26px;
+  height: 26px;
+}
+.locationList li {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.bottomBorder {
+  padding-top: 4px;
+  border-bottom: 4px solid blue;
+}
+.bottomBorder button:hover {
+  background-color: transparent;
+}
