@@ -6,14 +6,12 @@ import { useRouter } from "next/router";
 import home from "../../assets/img/home.svg";
 import friendsreq from "../../assets/img/friendsreq.svg";
 import videos from "../../assets/img/videos.svg";
-import marketplace from "../../assets/img/marketplace.svg";
 import groups from "../../assets/img/groups.svg";
 
 import homeActive from "../../assets/img/homeActive.svg";
 import groupsActive from "../../assets/img/groupsActive.svg";
 import videosActive from "../../assets/img/videosActive.svg";
 import friendsActive from "../../assets/img/friendsreqActive.svg";
-import marketActive from "../../assets/img/marketplaceActive.svg";
 const PAGELIST = () => {
   const pageParams = [
     {
@@ -33,12 +31,6 @@ const PAGELIST = () => {
       imgSource: videos.src,
       imgSourceActive: videosActive.src,
       alt: "videos",
-    },
-    {
-      link: "/marketplace",
-      imgSource: marketplace.src,
-      imgSourceActive: marketActive.src,
-      alt: "marketplace",
     },
     {
       link: "/groups",

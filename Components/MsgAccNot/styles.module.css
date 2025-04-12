@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.main button {
+  all: unset;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(84, 83, 83);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.main button:hover {
+  background-color: rgb(116, 114, 114);
+}
+.main img {
+  width: 20px;
+  height: 20px;
+}
