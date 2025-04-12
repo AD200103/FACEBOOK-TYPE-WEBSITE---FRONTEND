@@ -3,11 +3,10 @@ import styles from "./styles.module.css";
 import facebookLogo from "../../assets/img/facebookLogo.webp";
 import searchLogo from "../../assets/img/searchLogo.png";
 import PAGELIST from "../PageList/PageList";
-import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
+import MESSAGESNOTACC from "../MsgAccNot/MsgAccNot";
 
 const HEADER = () => {
-  const router = useRouter();
   const [searchShifted, setSearchShifted] = useState(false);
   //=================================================================
   const searchInpRef = useRef<HTMLDivElement | null>(null);
@@ -23,7 +22,6 @@ const HEADER = () => {
       }
     };
     document.addEventListener("mousedown", handler);
-    console.log(router.pathname);
     return () => {
       document.removeEventListener("mousedown", handler);
     };
@@ -52,6 +50,7 @@ const HEADER = () => {
         </div>
       </div>
       <PAGELIST />
+      <MESSAGESNOTACC />
     </div>
   );
 };

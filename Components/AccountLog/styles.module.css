@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.main:hover {
+  opacity: 1;
+}
+.main .accountLogo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+.accountArrContainer {
+  position: absolute;
+  align-self: flex-end;
+  left: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(86, 85, 85);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  outline: rgb(56, 56, 63) solid 3px;
+}
+.main .accountArrContainer .accountArrow {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+.main .accountLogoActivated {
+  opacity: 1;
+}
+.main .accountArrowDeactivated {
+  opacity: 0.92;
+}

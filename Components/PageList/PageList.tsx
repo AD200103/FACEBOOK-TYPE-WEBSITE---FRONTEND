@@ -17,35 +17,30 @@ import marketActive from "../../assets/img/marketplaceActive.svg";
 const PAGELIST = () => {
   const pageParams = [
     {
-      routerPathName: "/",
       link: "/",
       imgSource: home.src,
       imgSourceActive: homeActive.src,
       alt: "home",
     },
     {
-      routerPathName: "/friends",
       link: "/friends",
       imgSource: friendsreq.src,
       imgSourceActive: friendsActive.src,
       alt: "friends",
     },
     {
-      routerPathName: "/videos",
       link: "/videos",
       imgSource: videos.src,
       imgSourceActive: videosActive.src,
       alt: "videos",
     },
     {
-      routerPathName: "/marketplace",
       link: "/marketplace",
       imgSource: marketplace.src,
       imgSourceActive: marketActive.src,
       alt: "marketplace",
     },
     {
-      routerPathName: "/groups",
       link: "/groups",
       imgSource: groups.src,
       imgSourceActive: groupsActive.src,
@@ -59,13 +54,11 @@ const PAGELIST = () => {
       {pageParams.map((p) => (
         <li
           key={p.alt}
-          className={`${styles.bottom} ${
-            router.pathname == p.routerPathName && styles.bottomBorder
-          }`}
+          className={`${router.pathname == p.link && styles.bottomBorder}`}
         >
           <Link href={p.link}>
             <button>
-              {router.pathname == p.routerPathName ? (
+              {router.pathname == p.link ? (
                 <img src={p.imgSourceActive} alt={p.alt} />
               ) : (
                 <img src={p.imgSource} alt={p.alt} />
