@@ -61,38 +61,8 @@
 .searchBoxShifted {
   transform: translateX(-20px);
 }
-.locationList {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-.locationList button {
-  all: unset;
-  width: 100px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.locationList button:hover {
-  background-color: rgb(123, 122, 122);
-}
+
 .locationList img {
   width: 26px;
   height: 26px;
-}
-.locationList li {
-  list-style: none;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.bottomBorder {
-  padding-top: 4px;
-  border-bottom: 4px solid blue;
-}
-.bottomBorder button:hover {
-  background-color: transparent;
 }
